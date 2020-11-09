@@ -11,7 +11,7 @@ header('Location: /login.php');
         <ul>
             <?php foreach ($_SESSION['products'] as $productId => $quantity) : ?>
                 <li>
-                    <?= $catalog[$productId]['name'] ; ?> : <?= $quantity ?>
+                    <?= $catalog[$productId]['name'] ; ?> : <?= $quantity ; ?>
                 </li>
             <?php endforeach; ?>
         </ul>
